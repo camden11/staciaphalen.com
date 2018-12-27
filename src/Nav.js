@@ -35,6 +35,7 @@ const TitleLink = styled(Link)`
 const NavLink = styled(Link)`
   font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
+  color: #000;
 
   &:visited {
     color: #000;
