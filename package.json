@@ -6,6 +6,7 @@
     "react-scripts": "2.1.2"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "prismic-javascript": "^2.0.1",
     "prismic-reactjs": "^0.3.2",
     "react": "^16.7.0",
@@ -18,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,5 +31,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "https://stacia.phalen.io"
 }
