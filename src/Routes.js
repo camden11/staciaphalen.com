@@ -16,7 +16,13 @@ const Routes = props => {
           componentProps={{ uid: "nav" }}
         />
         <Switch>
-          <PrismicRoute exact path="/" component={Work} routerProps={props} />
+          <PrismicRoute
+            exact
+            path="/"
+            component={Work}
+            routerProps={props}
+            componentProps={{ uid: "front" }}
+          />
           <PrismicRoute
             exact
             path="/about"

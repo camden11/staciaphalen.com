@@ -23,6 +23,15 @@ const NavLinkWrapper = styled.div`
   }
 `;
 
+const TitleLink = styled(Link)`
+  text-decoration: none;
+  color: #000;
+
+  &:visited {
+    color: #000;
+  }
+`;
+
 const NavLink = styled(Link)`
   font-family: "Source Sans Pro", sans-serif;
   text-decoration: none;
@@ -43,7 +52,9 @@ class Nav extends Component {
     return (
       <Container>
         <SiteTitleSection>
-          <H1>{doc.data.site_title}</H1>
+          <H1>
+            <TitleLink to="/">{doc.data.site_title}</TitleLink>
+          </H1>
         </SiteTitleSection>
         <NavLinkSection>
           <NavLinkWrapper active={location.pathname === "/about"}>
