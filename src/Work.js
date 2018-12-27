@@ -8,7 +8,7 @@ import { Container, H2, P } from "./style";
 
 const GalleryContainer = styled.div`
   padding-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   grid-column: span 12;
 
   p {
@@ -19,7 +19,7 @@ const GalleryContainer = styled.div`
 `;
 
 const GalleryTitle = styled(H2)`
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 10px;
 `;
 
