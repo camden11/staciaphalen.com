@@ -6,7 +6,7 @@ import { Container, H2, A, MediaQueries } from "./style";
 
 const AboutContent = styled(Container)`
   padding: 70px 0;
-  grid-column-gap: 23px;
+  grid-column-gap: 30px;
 `;
 
 const TextColumn = styled.div`
@@ -16,6 +16,7 @@ const TextColumn = styled.div`
     font-family: "Source Serif Pro";
     line-height: 1.5;
     font-size: 16px;
+    margin-bottom: 16px;
   }
 
   ${MediaQueries.small} {
