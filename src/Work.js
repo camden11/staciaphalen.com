@@ -42,7 +42,31 @@ const VideoWrapper = styled.div`
   }
 `;
 
-const PlayButton = styled.div``;
+const PlayButton = styled.div`
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 60px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 16.5px;
+    left: 40px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 12.5px 0 12.5px 20px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+  }
+`;
 
 class Work extends Component {
   static pageType = "front_page";
@@ -76,7 +100,8 @@ class Work extends Component {
 
   onSlide = currentIndex => {
     this.setState({
-      currentIndex
+      currentIndex,
+      videoPlaying: {}
     });
   };
 
